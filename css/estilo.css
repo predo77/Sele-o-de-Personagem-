@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+    
+}
+body::before{
+    content: '';
+    background-image: url("../Projeto jogo Meninas Super Poderosas/the-power-puff-girls-hearts.gif");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    opacity: 0.16;
+    
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+}
+.cabecalho{
+    z-index: 1;
+    display: flex;    
+    justify-content: center;
+}
+.cabecalho .text-t{
+    color:deeppink;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 56px;
+
+}
+.per{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.per .personagem-grande{
+    width: 40%;
+    height: 75vh;
+    position: relative;
+    
+}
+.per .personagem-grande img{
+    
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    right: 57%;
+    transform: translate(-50%, -50%);
+}
+main .tela-selecao{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    height: 10%;
+    width: 50%;
+    justify-content: center;
+    gap: 15px;
+}
+main .tela-selecao .personagem img{
+    border: 2px solid white;
+    background-color: white;
+    width: 100%;
+    height: 160px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+    
+
+}
+main .tela-selecao .personagem :hover{
+    transform: scale(1.09);
+    z-index: 2;
+}
